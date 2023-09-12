@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            position: relative;
+        }
+
+        h1,
+        p {
+            text-align: center;
+            width: 100%;
+        }
+
+        .nav {
+            background-color: springgreen;
+            position: absolute;
+            left: -10%;
+            top: 0;
+            width: 300px;
+            padding: 20px;
+            transition: left 0.5s ease-in-out;
+        }
+
+        div:hover {
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hoverable Sidenav Buttons</h1>
+    <p>Hover over the buttons in the left side navigation to open them.</p>
+    <div class="nav">
+        <a href="#">Home</a>
+    </div>
+
+    <div class="nav" style="top: 100px; background: cadetblue;">
+        <a href="#">HTML</a>
+    </div>
+
+    <div class="nav" style="top: 200px; background: goldenrod;">
+        <a href="#">CSS</a>
+    </div>
+</body>
+
+</html>
