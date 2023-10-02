@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 80%;
+            gap: 20px;
+        }
+
+        .check {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 200px;
+        }
+
+        input {
+            border: 1px solid rgb(219, 209, 209);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: rgb(41, 206, 16);
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .cancel {
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(192, 192, 192, 0.125);
+            padding: 10px;
+            align-items: center;
+        }
+
+        .btn {
+            background-color: rgb(221, 47, 47);
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 0;
+
+        }
+
+        form {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <img src="https://media.licdn.com/dms/image/D4D03AQHF9cTg8ZNfDg/profile-displayphoto-shrink_800_800/0/1669818508239?e=1701302400&v=beta&t=JZHk2ZQLe9Fxv70u2MVajzDXPP2jkwKB6HGwoDX3hlA"
+            alt="">
+        <form action="">
+            <label for="username">Username</label>
+            <input type="text" name="" id="username" placeholder="Enter Username">
+
+            <label for="password">Password</label>
+            <input type="password" name="" id="password" placeholder="Enter Password">
+
+            <button>Login</button>
+            <div class="check">
+                <input type="checkbox" name="" id="">
+                <label for="">Remember me</label>
+            </div>
+        </form>
+        <div class="cancel">
+            <button class="btn">Cancel</button>
+            <a href="#">forgot password?</a>
+        </div>
+    </div>
+</body>
+
+</html>
